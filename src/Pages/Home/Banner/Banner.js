@@ -19,7 +19,7 @@ const Banner = () => {
           <Grid item xs={12} md={5}>
             <Typography style={{textAlign:'start'}}>
                 <h2>Start your smile</h2>
-                <p>Keep your smiling all day, amet consectetur adipisicing elit. Distinctio temporibus voluptas facilis nobis iure aliquid voluptatum aperiam vel repudiandae officia!</p>
+                <p>Keep your smiling all day, We are the best pratner for your best services. Distinctio temporibus voluptas facilis nobis iure aliquid voluptatum aperiam vel repudiandae officia!</p>
                 <Button variant="contained" style={{backgroundColor:'green'}}>take a service</Button>
             </Typography>
           </Grid>

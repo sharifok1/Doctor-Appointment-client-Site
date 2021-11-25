@@ -12,7 +12,7 @@ const Payment = () => {
     const [appointment, setAppointment]=useState([]);
     
     useEffect(()=>{
-        const url = `http://localhost:3010/appointment/${AppointmentId}`
+        const url = `https://shielded-hamlet-22559.herokuapp.com/appointment/${AppointmentId}`
         fetch(url)
         .then(res=>res.json())
         .then(data => setAppointment(data))

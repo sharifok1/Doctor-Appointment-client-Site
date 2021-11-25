@@ -12,7 +12,7 @@ const CheackOutForm = ({appointment}) => {
     const elements = useElements();
     const [clientSecret,setClientSecret] = useState('');
     useEffect(()=>{
-      const url='http://localhost:3010/create-payment-intent';
+      const url='https://shielded-hamlet-22559.herokuapp.com/create-payment-intent';
       fetch(url,{
         method:'POST',
         headers:{
@@ -85,7 +85,7 @@ const CheackOutForm = ({appointment}) => {
             brand:paymentMethod.card.brand,
           }
 
-          const url = `http://localhost:3010/appointment/${_id}`
+          const url = `https://shielded-hamlet-22559.herokuapp.com/appointment/${_id}`
           fetch(url,{
             method:'PUT',
             headers:{

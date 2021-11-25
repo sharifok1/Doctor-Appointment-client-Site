@@ -16,7 +16,7 @@ const AddDoctor = () => {
         formData.append('email', email);
         formData.append('image', image);
         
-        fetch('http://localhost:3010/doctors', {
+        fetch('https://shielded-hamlet-22559.herokuapp.com/doctors', {
             method: 'POST',
             body: formData
             })

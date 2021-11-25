@@ -99,7 +99,7 @@ const useFirebase =()=>{
     // saved user in database---------------------//
     const savedUser=(email,displayName, method)=>{
       const user = {email, displayName};
-      const url='http://localhost:3010/users'
+      const url='https://shielded-hamlet-22559.herokuapp.com/users'
       fetch(url,{
         method:method,
         headers:{
@@ -113,7 +113,7 @@ const useFirebase =()=>{
     }
      // admin --------------------------call admin
      useEffect(()=>{
-       const url = `http://localhost:3010/users/${user.email}`
+       const url = `https://shielded-hamlet-22559.herokuapp.com/users/${user.email}`
        fetch(url)
        .then(res=>res.json())
        .then(data=>setAdmin(data.admin))

@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     const makeAdminHandler =(e)=>{
        e.preventDefault()
        const user = {email}
-       const url = 'http://localhost:3010/user/admin'
+       const url = 'https://shielded-hamlet-22559.herokuapp.com/user/admin'
        fetch(url,{
            method:'PUT',
            headers:{

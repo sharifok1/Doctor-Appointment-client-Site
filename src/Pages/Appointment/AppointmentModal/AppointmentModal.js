@@ -32,7 +32,7 @@ const AppointmentModal = ({openModal , handleBookingModalClose,booking,date,pric
     const modalformSubmit= (e)=>{
         e.preventDefault()
         const appointment = {...bookingInfo, date, time:booking.time, price}
-        fetch('http://localhost:3010/appointment',{
+        fetch('https://shielded-hamlet-22559.herokuapp.com/appointment',{
           method:'POST',
           headers:{
             'content-type':'application/JSON'

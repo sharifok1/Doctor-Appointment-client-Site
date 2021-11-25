@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 const Doctor = () => {
     const [doctor, setDoctor]=useState([]);
     useEffect(()=>{
-        const url = 'http://localhost:3010/doctors'
+        const url = 'https://shielded-hamlet-22559.herokuapp.com/doctors'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setDoctor(data))
